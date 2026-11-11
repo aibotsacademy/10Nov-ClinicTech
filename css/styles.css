@@ -1033,3 +1033,31 @@ footer .sep{background:var(--champagne)}
 .chart svg path:last-child{stroke:var(--teal)}
 .mod b,.val h3,.feat h3,.point h3{font-family:var(--head)!important}
 .pin span{font-family:var(--ui)}
+
+/* ===== nav: "Diagnosticar mi clínica" — eye-catching CTA ===== */
+.btn-diag{position:relative;overflow:hidden;isolation:isolate;background:var(--terracotta);color:#fff;padding:13px 22px;font-size:11.5px;letter-spacing:.12em;box-shadow:0 12px 28px -12px rgba(147,70,51,.75);animation:diag-glow 2.6s ease-in-out infinite}
+.btn-diag::before{content:"";position:absolute;inset:-2px;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.42) 48%,transparent 66%);transform:translateX(-120%);animation:diag-shine 3.2s ease-in-out infinite}
+.btn-diag::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(195,106,85,.55);animation:diag-ring 2.6s ease-out infinite;pointer-events:none}
+.btn-diag .spark{display:inline-block;color:var(--champagne);font-size:14px;line-height:1;animation:diag-twinkle 1.6s ease-in-out infinite}
+.btn-diag:hover{background:#7E3B2B;transform:translateY(-1px)}
+@keyframes diag-shine{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+@keyframes diag-ring{0%{box-shadow:0 0 0 0 rgba(195,106,85,.55)}70%,100%{box-shadow:0 0 0 12px rgba(195,106,85,0)}}
+@keyframes diag-glow{50%{box-shadow:0 16px 34px -10px rgba(147,70,51,.9)}}
+@keyframes diag-twinkle{50%{transform:scale(1.35) rotate(20deg);opacity:.75}}
+@media (max-width:1140px){.nav .btn-diag{display:inline-flex}}
+@media (max-width:640px){
+  .nav .btn-diag{padding:10px 13px;font-size:10px;letter-spacing:.08em;gap:6px}
+  .nav .wordmark,.nav .brand .sep{display:none}
+  .nav .lang{margin-left:auto}
+  .nav .lang button{padding:6px 8px}
+}
+@media (prefers-reduced-motion:reduce){.btn-diag,.btn-diag::before,.btn-diag::after,.btn-diag .spark{animation:none}}
+
+.btn-diag{flex:none}
+.lang-m{display:none}
+@media (min-width:1141px) and (max-width:1340px){.nav-links{gap:16px;font-size:11px}.nav .wrap{gap:12px}}
+@media (max-width:640px){
+  .nav .wrap > .lang{display:none}
+  .lang-m{display:flex;align-self:flex-start;margin:14px 0 4px}
+  .nav .btn-diag{margin-left:auto}
+}

@@ -41,3 +41,8 @@ Before & after: without cases, the slider shows a capture vs. its analysis (demo
 Defined once at the top of `css/styles.css` (`:root`): Porcelain #F8F3EC (background), White #FFFFFF (surfaces), Ink #211A18 (text), Warm gray #665954 (secondary text), Burgundy #713C47 (blocks, primary button), Wine #3F2127 (footer), Terracotta #934633 (accents, links), Decorative terracotta #C36A55, Bronze #80512E, Champagne #F0D28B (accent on dark), Teal #2E645E (progress), Pale rose #F6E0D3 (light blocks), Light line #DFD2C4, Dark line #8E6068.
 Rules: champagne and decorative terracotta are never text on porcelain; body text keeps ≥ 4.5:1 contrast.
 Fonts: Belleza (titles), EB Garamond (editorial: leads, quotes, italic accents), Manrope (interface and numbers).
+
+## Diagnóstico (diagnostico.html)
+Free clinic diagnosis linked from the "Diagnosticar mi clínica" button in the nav (and the GEO section). It scans the clinic's website (Apps Script backend set in `<meta name="gas-endpoint">`) and runs a questionnaire: clinic, demand, sales, processes, **store & products (e-commerce: Shopify, WooCommerce, JavaScript/custom, Wix, Tiendanube, VTEX, marketplace, other)**, goals and contact.
+At the end, `recommend()` scores the answers and shows the Clinic Management Tech modules that fit the clinic best (top 3 + others), with the reasons taken from the answers. They are also added to the PDF, the WhatsApp share text and the payload (`profile.recommendedModules`, `profile.ecommerce`).
+Spanish only. Styled with the same palette and fonts as the site.

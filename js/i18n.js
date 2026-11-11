@@ -9,6 +9,7 @@
 
   const ES = {
     // nav + hero
+    'Diagnose my clinic': 'Diagnosticar mi clínica',
     'Before & after': 'Antes y después', 'See how it works': 'Ver cómo funciona', 'Scroll': 'Desliza',
     'One console for your clinic. One app for each patient.': 'Una consola para tu clínica. Una app para cada paciente.',
     'GEO positioning': 'Posicionamiento GEO',
