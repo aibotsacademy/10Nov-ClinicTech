@@ -47,7 +47,7 @@
 window.CMT_CONFIG = {
   WHATSAPP: '',   // sales WhatsApp, digits only with country code, e.g. '50688887777'
   ENDPOINT: '',   // Apps Script Web App /exec URL. Receives action: 'lead' | 'chat' | 'appointment' | 'alert' | 'order'
-  GEO_URL:  '',   // URL of the GEO scanner / diagnosis page
+  GEO_URL:  'diagnostico.html',   // URL of the GEO scanner / diagnosis page
   INSTAGRAM:'',   // Instagram profile URL
   VIDEO:    'assets/app-scan.mp4', // hero screen recording
   CURRENCY: 'USD',
@@ -100,9 +100,10 @@ window.CMT_CONFIG = {
       <a href="#patients">Patient app</a>
       <a href="#shop">Shop</a>
       <a href="#geo">GEO</a>
+      <div class="lang lang-m" role="group" aria-label="Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button></div>
     </nav>
     <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button></div>
-    <a class="btn btn-gold" href="#demo">Book a demo</a>
+    <a class="btn btn-diag" href="diagnostico.html"><span class="spark" aria-hidden="true">✦</span><span>Diagnose my clinic</span></a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
   </div>
 </header>
